@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "new_todo": "New Todo",
+  "new_todo_hint": "Enter your new task",
+  "add": "Add",
+  "enter_task": "Please enter a task"
+}

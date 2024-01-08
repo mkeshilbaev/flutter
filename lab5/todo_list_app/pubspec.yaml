@@ -11,15 +11,31 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
   flutter_bloc: ^7.0.0
   equatable: ^2.0.0
   get_it: ^7.6.4
-  cupertino_icons: ^1.0.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  dio: ^4.0.0
+ 
+  cupertino_icons: ^1.0.2  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - lib/l10n/
+
+  localization:
+    path: lib/l10n
+    arb-dir: lib/l10n
+    output-dir: lib/l10n
+    template-arb-file: lib/l10n/intl_en.arb
