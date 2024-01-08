@@ -10,7 +10,6 @@ class AppLocalizations {
   }
 
   String translate(String key) {
-    // Implement translation logic here based on the locale and key
     return key;
   }
 }

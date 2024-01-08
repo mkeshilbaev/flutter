@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_list_app/features/tasks/presentation/blocs/locale_bloc.dart';
+import '/features/tasks/presentation/blocs/locale_bloc.dart';
 import 'add_task_screen.dart';
 
 class TodoApp extends StatelessWidget {

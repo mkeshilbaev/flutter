@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:todo_list_app/features/tasks/data/dtos/task_dto.dart';
+import '/features/tasks/data/dtos/task_dto.dart';
 
 class TaskRepository {
   final Dio dio;

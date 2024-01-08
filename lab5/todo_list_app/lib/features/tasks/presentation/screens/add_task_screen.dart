@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_list_app/features/tasks/presentation/blocs/locale_bloc.dart';
-import 'package:todo_list_app/features/tasks/presentation/localization/app_localizations.dart';
+import '/features/tasks/presentation/blocs/locale_bloc.dart';
+import '/features/tasks/presentation/localization/app_localizations.dart';
 
 class AddTaskScreen extends StatelessWidget {
   const AddTaskScreen({super.key});

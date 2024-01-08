@@ -1,9 +1,9 @@
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
-import 'package:todo_list_app/features/tasks/data/repositories/task_repository.dart';
-import 'package:todo_list_app/features/tasks/data/services/local_storage_service.dart';
-import 'package:todo_list_app/features/tasks/domain/usecases/get_tasks_usecase.dart';
-import 'package:todo_list_app/features/tasks/presentation/blocs/locale_bloc.dart';
+import 'features/tasks/data/repositories/task_repository.dart';
+import 'features/tasks/data/services/local_storage_service.dart';
+import 'features/tasks/domain/usecases/get_tasks_usecase.dart';
+import 'features/tasks/presentation/blocs/locale_bloc.dart';
 
 final getIt = GetIt.instance;
 

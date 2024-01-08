@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
-import 'package:todo_list_app/features/tasks/data/dtos/task_dto.dart';
-import 'package:todo_list_app/features/tasks/data/repositories/task_repository.dart';
+import '/features/tasks/data/dtos/task_dto.dart';
+import '/features/tasks/data/repositories/task_repository.dart';
 
 @injectable
 class GetTasksUseCase {

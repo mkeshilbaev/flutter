@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_list_app/injection.dart' as di;
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'injection.dart' as di;
 import 'features/tasks/presentation/blocs/locale_bloc.dart';
 import 'features/tasks/presentation/screens/todo_app.dart';
 import 'features/tasks/presentation/localization/app_localizations.dart';
@@ -11,10 +12,7 @@ void main() async {
 
   runApp(
     MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (context) => di.getIt<LocaleBloc>()),
-        // Add other BlocProviders here...
-      ],
+      providers: [BlocProvider(create: (context) => di.getIt<LocaleBloc>())],
       child: const MyApp(),
     ),
   );
@@ -29,17 +27,13 @@ class MyApp extends StatelessWidget {
       builder: (context, state) {
         return MaterialApp(
           locale: state.currentLocale,
-          localizationsDelegates: [
+          localizationsDelegates: const [
             AppLocalizationsDelegate(),
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
-          supportedLocales: [
-            const Locale('en', ''),
-            const Locale('ru', ''),
-            // Add other supported locales here...
-          ],
+          supportedLocales: const [Locale('en', ''), Locale('ru', '')],
           title: 'Todo list by Madi',
           theme: ThemeData(
             primarySwatch: Colors.blue,
